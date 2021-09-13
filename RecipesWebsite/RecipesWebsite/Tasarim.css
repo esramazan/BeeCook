@@ -1,0 +1,24 @@
+﻿.Buttonn {
+    /*buton ozellikleri*/
+    height: 40px;
+    width: 120px;
+    background-color: #0094ff;
+    color: white;
+    font-size: 18pt;
+}
+
+.Label {
+    background-color: antiquewhite;
+    font-size: 12pt;
+    color: black;
+}
+
+.Div{
+    /*div alanının goruntusu marginler sagdan soldan bosluk bırakmak icin*/
+    background-color:lightblue;
+    width:500px; /*genislik*/
+    height:100px; /*yukseklik*/
+    margin-left:50px;
+    margin-top:50px; /*yukardan bu galiba*/
+
+}
