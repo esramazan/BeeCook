@@ -71,6 +71,8 @@
     <Content Include="Hakkimizda.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Iletisim.aspx" />
+    <Content Include="images\chcheesecake.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="TarifPaylas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,6 +113,7 @@
       <DependentUpon>Kullanici.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlConn.cs" />
     <Compile Include="TarifPaylas.aspx.cs">
       <DependentUpon>TarifPaylas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
