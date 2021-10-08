@@ -32,11 +32,15 @@
             width: 198px;
         }
         .auto-style6 {}
+        .auto-style7 {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">.:
-<div style="background-position: center center; width: 700px; height: 150px; margin-left: 300px; background-color: #FFCC66; background-image: url('/images/logo.png'); background-repeat: no-repeat;">        </div>
+<div style="background-position: center center; width: 700px; height: 150px; margin-left: 300px; background-image: url('/images/logo_auto_x2.jpg'); background-repeat: no-repeat; background-size:cover">       
+        </div>
         <div style="width: 700px; height: 20px; margin-left: 300px;">&nbsp;</div>  <%--bosluk divi--%>
         <div style="width:700px; height: 30px; margin-left:300px; background-color:#F4CD31; font-weight: 700;"> 
             <table class="newStyle1">

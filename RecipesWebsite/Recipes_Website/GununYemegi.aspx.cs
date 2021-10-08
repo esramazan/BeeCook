@@ -13,16 +13,15 @@ namespace Recipes_Website
         SqlConn bgl = new SqlConn();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Select * from GununYemegi", bgl.baglanti());
+            SqlCommand cmd = new SqlCommand("Select top(1)* from GununYemegi where GununYemegiTarih between '" + Convert.ToString(DateTime.Now.Year) + "-" + Convert.ToString(DateTime.Now.Month) + "-" + Convert.ToString(DateTime.Now.Day) + " 00:00:00' and '" + Convert.ToString(DateTime.Now.Year) + "-" + Convert.ToString(DateTime.Now.Month) + "-" + Convert.ToString(DateTime.Now.Day) + " 23:59:59' order by GununYemegiTarih desc", bgl.baglanti());
+             
             SqlDataReader rd = cmd.ExecuteReader();
             DataList2.DataSource = rd;
             DataList2.DataBind();
-
         }
 
         protected void DataList2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

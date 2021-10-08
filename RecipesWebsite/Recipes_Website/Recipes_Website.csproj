@@ -72,7 +72,11 @@
     <Content Include="HomePage.aspx" />
     <Content Include="Iletisim.aspx" />
     <Content Include="images\chcheesecake.jpg" />
+    <Content Include="images\fsmakarna.JPG" />
     <Content Include="images\logo.png" />
+    <Content Include="images\logo_auto_x2.jpg" />
+    <Content Include="images\logo_auto_x2_640x220.jpg" />
+    <Content Include="images\logo_auto_x2_800x275.jpg" />
     <Content Include="TarifPaylas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
