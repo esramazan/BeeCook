@@ -19,5 +19,10 @@ namespace Recipes_Website
             DataList1.DataSource = rd;
             DataList1.DataBind();
         }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

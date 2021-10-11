@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -31,9 +32,25 @@
         .auto-style5 {
             width: 198px;
         }
-        .auto-style6 {}
+        .auto-style6 {
+            width: 100%;
+        }
         .auto-style7 {
-            text-align: left;
+            width: 63px;
+            text-align: center;
+        }
+        .auto-style9 {
+            width: 210px;
+            float: left;
+            height: auto;
+        }
+        .auto-style10 {
+            color: #000000;
+        }
+        .auto-style11 {
+            color: #000000;
+            text-align: center;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -42,35 +59,44 @@
 <div style="background-position: center center; width: 700px; height: 150px; margin-left: 300px; background-image: url('/images/logo_auto_x2.jpg'); background-repeat: no-repeat; background-size:cover">       
         </div>
         <div style="width: 700px; height: 20px; margin-left: 300px;">&nbsp;</div>  <%--bosluk divi--%>
-        <div style="width:700px; height: 30px; margin-left:300px; background-color:#F4CD31; font-weight: 700;"> 
+        <div style="width:700px; height: 30px; background-color:#F4CD31; margin-left:300px; font-weight: 700;">  <%-- background-color:#F4CD31; --%>
             <table class="newStyle1">
                 <tr>
-                    <td class="auto-style2"><a href="HomePage.aspx">Ana Sayfa</a></td>
-                    <td class="auto-style2"><a href="GununYemegi.aspx">Günün Yemeği</a></td>
-                    <td class="auto-style2"><a href="TarifPaylas.aspx">Tarif Paylaş</a></td>
-                    <td class="auto-style2"><a href="Hakkimizda.aspx">Hakkımızda</a></td>
-                    <td class="auto-style2"><a href="Iletisim.aspx">İletişim</a></td>
+                    <td class="auto-style11"><a href="HomePage.aspx"><span class="auto-style10">Ana Sayfa</span></a></td>
+                    <td class="auto-style2"><a href="GununYemegi.aspx"><span class="auto-style10">Günün Yemeği</span></a></td>
+                    <td class="auto-style2"><a href="TarifPaylas.aspx"><span class="auto-style10">Tarif Paylaş</span></a></td>
+                    <td class="auto-style2"><a href="Hakkimizda.aspx"><span class="auto-style10">Hakkımızda</span></a></td>
+                    <td class="auto-style2"><a href="Iletisim.aspx"><span class="auto-style10">İletişim</span></a></td>
                 </tr>
             </table>
         </div>
         <div style="width: 700px; height: 20px; margin-left: 300px;">&nbsp;</div>  <%--bosluk divi--%>
         <div style="width: 700px; height: 300px; margin-left: 300px;">
             <%--Kategoriler divi --%>
-            <div style="width: 200px; float:left; height: auto;  background-color:#F4CD31;">
+            <div style="background-color:#F4CD31;" class="auto-style9">
                 <div class="auto-style3">
                     <span class="auto-style4"><strong>KATEGORİLER</strong></span><br />
                 </div>
 &nbsp;&nbsp;&nbsp;
-                <asp:DataList ID="DataList1" runat="server" CssClass="auto-style5 auto-style6">
+                <asp:DataList ID="DataList1" runat="server" CssClass="auto-style5 auto-style6" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                     <ItemTemplate>
-                        <div class="auto-style5" style="border-width: thin; border-color: #808080; border-top-style: none; border-right-style: none; border-bottom-style: solid; border-left-style: inherit;">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                        <div class="auto-style6" style="border-width: thin; border-color: #808080; border-top-style: none; border-right-style: none; border-bottom-style: solid; border-left-style: inherit;">
+                            <table class="auto-style6">
+                                <tr>
+                                    <td class="auto-style7">
+                                        <asp:Image ID="Image1" runat="server" Height="45px" ImageUrl='<%# Eval("Kategoriresim") %>' Width="58px" />
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </ItemTemplate>
                 </asp:DataList>
             </div> <%--float:left eklenebilir --%>
-            <%--Icerik divi --%>
-            <div style="width: 480px; height: auto; background-color:#F4CD31; margin-left:220px">
+            <%--Icerik divi     background-color:#F4CD31; --%>
+            <div style="width: 480px; height: auto; margin-left:220px">
                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                  </asp:ContentPlaceHolder>
             </div> <%--float:left eklenebilir --%>  

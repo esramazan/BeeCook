@@ -72,11 +72,16 @@
     <Content Include="HomePage.aspx" />
     <Content Include="Iletisim.aspx" />
     <Content Include="images\chcheesecake.jpg" />
+    <Content Include="images\chicken.png" />
+    <Content Include="images\dessert.png" />
+    <Content Include="images\drink.png" />
     <Content Include="images\fsmakarna.JPG" />
-    <Content Include="images\logo.png" />
     <Content Include="images\logo_auto_x2.jpg" />
-    <Content Include="images\logo_auto_x2_640x220.jpg" />
-    <Content Include="images\logo_auto_x2_800x275.jpg" />
+    <Content Include="images\meat.png" />
+    <Content Include="images\pasta.png" />
+    <Content Include="images\salad.png" />
+    <Content Include="images\soup-bowl.png" />
+    <Content Include="StyleSheet.css" />
     <Content Include="TarifPaylas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

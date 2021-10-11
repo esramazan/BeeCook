@@ -30,43 +30,42 @@
     <tr>
         <td class="auto-style10">Yemek Adı</td>
         <td>
-            <asp:TextBox ID="TextBox1" runat="server" Width="325px"></asp:TextBox>
+            <asp:TextBox ID="txtYemekAdi" runat="server" Width="325px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style10">Malzemeler</td>
         <td>
-            <asp:TextBox ID="TextBox5" runat="server" Height="120px" TextMode="MultiLine" Width="325px"></asp:TextBox>
+            <asp:TextBox ID="txtMalzemeler" runat="server" Height="120px" TextMode="MultiLine" Width="325px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style10">Yapılışı</td>
         <td>
-            <asp:TextBox ID="TextBox6" runat="server" Height="150px" TextMode="MultiLine" Width="325px"></asp:TextBox>
+            <asp:TextBox ID="txtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="325px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style13">Resim</td>
         <td class="auto-style14">
-            <asp:TextBox ID="TextBox2" runat="server" Width="230px"></asp:TextBox>
-&nbsp;<asp:Button ID="Button2" runat="server" BackColor="Black" BorderStyle="Solid" Font-Names="Times New Roman" Font-Size="20px" ForeColor="#FFCC00" Height="27px" Text="Gözat" Width="92px" />
+            <asp:FileUpload ID="FileUpload1" runat="server" EnableTheming="True" Font-Names="Times New Roman" Font-Size="17px" Width="330px" />
         </td>
     </tr>
     <tr>
         <td class="auto-style10">Ad Soyad</td>
         <td>
-            <asp:TextBox ID="TextBox3" runat="server" Width="325px"></asp:TextBox>
+            <asp:TextBox ID="txtAdSoyad" runat="server" Width="325px"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style10">Mail</td>
         <td>
-            <asp:TextBox ID="TextBox4" runat="server" Width="325px"></asp:TextBox>
+            <asp:TextBox ID="txtMail" runat="server" Width="325px" TextMode="Email"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style3" colspan="2">
-            <asp:Button ID="Button1" runat="server" BackColor="Black" BorderStyle="Solid" Font-Bold="True" Font-Names="Times New Roman" Font-Size="22px" ForeColor="#FFCC00" Height="40px" Text="Gönder" Width="295px" />
+            <asp:Button ID="Button1" runat="server" BackColor="Black" BorderStyle="Solid" Font-Bold="True" Font-Names="Times New Roman" Font-Size="22px" ForeColor="#FFCC00" Height="40px" Text="Gönder" Width="295px" OnClick="Button1_Click" />
         </td>
     </tr>
 </table>
