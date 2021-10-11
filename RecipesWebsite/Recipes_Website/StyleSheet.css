@@ -1,10 +1,12 @@
 ﻿a:link { /*link verilenler nasıl olacak*/
     text-decoration: none; /*altcizgili olmasın*/
+    color:#000000;
     font-size: 20px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: bold;
+    text-align: center;
 }
-a:hover{  /*üzerine gelindiğinde nasıl olacak*/
-    color:black;
+a:hover { /*üzerine gelindiğinde nasıl olacak*/
+    font-size: 21px;
 }

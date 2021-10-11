@@ -40,8 +40,8 @@
                 <table class="auto-style14">
                     <tr>
                         <td class="auto-style16">
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("YemekAd") %>' CssClass="auto-style15"></asp:Label>
-                        </td>
+                            <a href="YemekDetay.aspx?Yemekid=1"><asp:Label ID="Label2" runat="server" Text='<%# Eval("YemekAd") %>' CssClass="auto-style15"></asp:Label>
+                        </a></td>
                     </tr>
                     <tr>
                         <td class="auto-style15">
