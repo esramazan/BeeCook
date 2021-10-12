@@ -13,7 +13,7 @@ namespace Recipes_Website
         SqlConn bgl = new SqlConn();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Select YemekAd,YemekMalzeme,YemekTarif,YemekResim,YemekTarih,YemekPuan,KategoriAd from Yemekler y left join Kategoriler k on y.Kategoriid=k.Kategoriid", bgl.baglanti());
+            SqlCommand cmd = new SqlCommand("Select Yemekid,YemekAd,YemekMalzeme,YemekTarif,YemekResim,YemekTarih,YemekPuan,KategoriAd from Yemekler y left join Kategoriler k on y.Kategoriid=k.Kategoriid", bgl.baglanti());
 
             SqlDataReader rd = cmd.ExecuteReader();
             DataList2.DataSource = rd;
